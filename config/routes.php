@@ -8,12 +8,11 @@
 
 use lithium\net\http\Router;
 
-Router::connect('/install/{:action}.{:type}/{:args}', array(
-'controller' => 'Install', 'library' => 'li3_install', 'type' => 'html'
-));
-
 Router::connect('/install/{:action}/{:args}', array(
-'controller' => 'Install', 'library' => 'li3_install'
+    'controller' => 'Install', 'library' => 'li3_install'
+));
+Router::connect('/install/{:action}.{:type}/{:args}', array(
+    'controller' => 'Install', 'library' => 'li3_install'
 ));
 
 ?>
