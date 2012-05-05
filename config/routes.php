@@ -12,7 +12,7 @@ Router::connect('/install/{:action}.{:type}/{:args}', array(
 'controller' => 'Install', 'library' => 'li3_install', 'type' => 'html'
 ));
 
-Router::connect('/file/{:action}/{:args}', array(
+Router::connect('/install/{:action}/{:args}', array(
 'controller' => 'Install', 'library' => 'li3_install'
 ));
 
